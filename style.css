@@ -1,0 +1,154 @@
+
+/* 全部網頁共用的基本設定 */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, "Microsoft JhengHei", sans-serif;
+    line-height: 1.8;
+    color: #263238;
+    background-color: #f4f7fb;
+}
+
+/* 頁首 */
+header {
+    background-color: #245b78;
+    color: white;
+    padding: 24px 20px;
+    text-align: center;
+}
+
+/* 導覽列：使用 Flexbox */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+}
+
+nav a:hover {
+    background-color: #397d9f;
+}
+
+/* 主要內容 */
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 24px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+/* 標題 */
+h1 {
+    margin-top: 0;
+    font-size: 32px;
+}
+
+h2 {
+    color: #245b78;
+    border-bottom: 2px solid #d9e7ef;
+    padding-bottom: 8px;
+}
+
+/* 段落 */
+p {
+    font-size: 16px;
+}
+
+/* 一般連結 */
+a {
+    color: #1769aa;
+}
+
+main a:hover {
+    color: #d35400;
+}
+
+/* 圖片 */
+img {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 16px;
+    margin: 20px 0;
+}
+
+/* 興趣清單 */
+ul {
+    padding-left: 28px;
+}
+
+/* 表格 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th,
+td {
+    border: 1px solid #b8cbd6;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #dcebf3;
+}
+
+/* 頁尾 */
+footer {
+    background-color: #203746;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+
+/* 手機版：螢幕寬度 600px 以下 */
+@media (max-width: 600px) {
+    header {
+        padding: 18px 12px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    nav a {
+        display: block;
+        width: 100%;
+    }
+
+    main {
+        margin: 12px;
+        padding: 16px;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    th,
+    td {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
